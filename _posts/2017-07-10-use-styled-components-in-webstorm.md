@@ -1,6 +1,6 @@
 ---
 layout: post
-comment: false
+comment: true
 title:  "在 Webstorm 中使用 styled-components"
 date:   2017-07-10 10:00 +0800
 categories: Other
