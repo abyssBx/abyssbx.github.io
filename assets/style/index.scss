@@ -3,13 +3,19 @@
 
 $primary-color: #F48024;
 $text-color: #333;
-$info-color: #ccc;
+$info-color: #aaa;
 $header-height: 64px;
+$footer-height: 16px;
+
+html, body {
+  height: 100%;
+}
 
 body {
   font-family: MicrosoftYaHeiUILight, sans-serif;
 }
 
+// site
 .site-header {
   border-top: 2px solid $primary-color;
   border-bottom: 1px solid #e8e8e8;
@@ -34,6 +40,7 @@ body {
 
 .main-container {
   padding: 16px 96px;
+  min-height: calc(100% - 67px - 82px - 32px);
   > .main-container-wrapper {
     width: 100%;
   }
@@ -41,7 +48,7 @@ body {
 
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  min-height: $header-height;
+  min-height: $footer-height;
   position: relative;
   > .footer-wrapper {
     width: 100%;
@@ -50,6 +57,7 @@ body {
   }
 }
 
+// post list
 .post-list {
   > .post-container {
     margin-bottom: 16px;
@@ -59,6 +67,7 @@ body {
       .post-title {
         font-size: 16px;
         color: $text-color;
+        letter-spacing: 0px;
       }
       .post-date {
         font-size: 12px;
@@ -85,4 +94,23 @@ body {
     color: darken($primary-color, 10%);
     text-decoration: none;
   }
+}
+
+// post page
+
+.post-header {
+  margin-bottom: 16px;
+  h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .post-subtitle {
+    font-size: 14px;
+    color: $info-color;
+  }
+}
+
+.post-content {
+  font-size: 16px;
+  color: $text-color;
 }
