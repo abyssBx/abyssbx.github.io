@@ -1,0 +1,88 @@
+---
+---
+
+$primary-color: #F48024;
+$text-color: #333;
+$info-color: #ccc;
+$header-height: 64px;
+
+body {
+  font-family: MicrosoftYaHeiUILight, sans-serif;
+}
+
+.site-header {
+  border-top: 2px solid $primary-color;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: $header-height;
+  position: relative;
+  > .header-wrapper {
+    width: 100%;
+    padding: 0 96px;
+    .logo {
+      font-size: 18px;
+      line-height: $header-height;
+      color: $text-color;
+      text-decoration: none;
+      transition: all 0.15s;
+      &:hover {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main-container {
+  padding: 16px 96px;
+  > .main-container-wrapper {
+    width: 100%;
+  }
+}
+
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  min-height: $header-height;
+  position: relative;
+  > .footer-wrapper {
+    width: 100%;
+    padding: 0 96px;
+    font-size: 14px;
+  }
+}
+
+.post-list {
+  > .post-container {
+    margin-bottom: 16px;
+    .post-header {
+      padding: 8px 0;
+      margin: 0;
+      .post-title {
+        font-size: 16px;
+        color: $text-color;
+      }
+      .post-date {
+        font-size: 12px;
+        margin-left: 8px;
+        color: $text-color;
+      }
+    }
+    .post-body {
+      color: #999999;
+      font-size: 12px;
+    }
+  }
+}
+
+.link {
+  color: $primary-color;
+  transition: all 0.15s;
+  cursor: pointer;
+  &:hover {
+    color: lighten($primary-color, 10%);
+    text-decoration: none;
+  }
+  &:visited {
+    color: darken($primary-color, 10%);
+    text-decoration: none;
+  }
+}

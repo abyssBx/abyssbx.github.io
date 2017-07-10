@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="post-list">
+    {% for page in site.posts %}
+    <div class="post-container">
+        <div class="post-header">
+            <span class="post-title">{{ page.title }}</span>
+            <span class="post-date">{{page.date | date: "%Y-%m-%d %H:%M"}}</span>
+        </div>
+        <div class="post-body">{{page.excerpt | slice: 0, 150}} <a class="link" href="{{ page.url }}">继续阅读</a></div>
+    </div>
+    {% endfor %}
+</div>
