@@ -3,7 +3,7 @@ layout: post
 comment: true
 title:  "在 Webstorm 中使用 styled-components"
 date:   2017-07-10 10:00 +0800
-categories: Other
+categories: f2e
 ---
 
 styled-components 是目前比较火的 css-in-js 方案，最近在做一些组件和工作的工作中也尝试去用它。不过 WebStorm 原生对他的支持并不好，在不加任何配置之前，styled-components 在 WebStorm 中是这样的：
